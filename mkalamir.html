@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title including Student ID (SID) and Full Name -->
+    <title>SID: 160197 | Mansoor Alamir - Cybersecurity Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            50: '#e6fbfb',
+                            100: '#ccf7f7',
+                            400: '#38edf2',
+                            500: '#00e5ff',
+                            600: '#00b8cc',
+                            800: '#005c66',
+                            900: '#081721',
+                            950: '#040d13',
+                        },
+                        shield: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom scrollbar for cyber aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #040d13;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #005c66;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00e5ff;
+        }
+        .grid-bg {
+            background-image: radial-gradient(rgba(0, 229, 255, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-cyber-950 text-slate-200 font-sans min-h-screen flex flex-col grid-bg antialiased selection:bg-cyber-500 selection:text-cyber-950">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-cyber-950/80 border-b border-cyber-900/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand / Student Details -->
+                <div class="flex items-center space-x-3">
+                    <div class="p-2 bg-cyber-500/10 border border-cyber-500/30 rounded-lg text-cyber-500">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-mono text-xs text-cyber-500 block leading-none">SID: 160197</span>
+                        <a href="#home" onclick="switchTab('home')" class="font-bold text-lg text-white hover:text-cyber-400 transition">Mansoor Alamir</a>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu Links -->
+                <nav class="flex space-x-1 sm:space-x-4">
+                    <button id="nav-home" onclick="switchTab('home')" 
+                        class="px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 flex items-center space-x-2 text-cyber-400 bg-cyber-900/60 border border-cyber-500/30 shadow-[0_0_10px_rgba(0,229,255,0.15)]">
+                        <i class="fa-solid fa-house text-xs"></i>
+                        <span>Home</span>
+                    </button>
+                    <button id="nav-contact" onclick="switchTab('contact')" 
+                        class="px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 flex items-center space-x-2 text-slate-400 hover:text-slate-100 hover:bg-cyber-900/40 border border-transparent">
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                        <span>Contact Me</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- ================= PAGE 1: HOME PAGE ================= -->
+        <div id="page-home" class="space-y-12 transition-opacity duration-300">
+            
+            <!-- HERO SECTION -->
+            <section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-cyber-900/90 via-cyber-950 to-slate-900 p-6 sm:p-10 border border-cyber-800/40 shadow-2xl">
+                <div class="absolute -top-24 -right-24 w-72 h-72 bg-cyber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
+                    
+                    <!-- Professional Photo / Portrait Avatar -->
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-cyber-500 to-shield-500 rounded-2xl blur opacity-50 group-hover:opacity-75 transition duration-300"></div>
+                        <div class="relative w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden border-2 border-cyber-500/40 bg-cyber-900">
+                            <img src="WhatsApp Image 2026-10-30 at 8.30.19 PM.jpeg" 
+                                 alt="Mansoor Alamir - Cybersecurity Student" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                 onerror="this.src='https://placehold.co/400x400/081721/00e5ff?text=Mansoor+Alamir'">
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 bg-shield-500 text-cyber-950 text-xs font-bold px-2.5 py-1 rounded-full border-2 border-cyber-950 flex items-center space-x-1 shadow">
+                            <i class="fa-solid fa-user-check"></i>
+                            <span>Verified SID</span>
+                        </div>
+                    </div>
+
+                    <!-- Personal Meta & Description -->
+                    <div class="flex-1 text-center md:text-left space-y-4">
+                        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyber-500/10 border border-cyber-500/30 text-cyber-400 text-xs font-mono">
+                            <span class="w-2 h-2 rounded-full bg-cyber-500 animate-pulse"></span>
+                            <span>Student ID: 160197</span>
+                        </div>
+                        
+                        <div>
+                            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Mansoor Alamir</h1>
+                            <p class="text-lg sm:text-xl text-cyber-400 font-medium mt-1">
+                                Major: <span class="text-slate-100">Cybersecurity</span>
+                            </p>
+                            <p class="text-sm text-slate-400 font-mono mt-0.5">
+                                Academic Level: <span class="text-shield-500 font-semibold">Fourth Year (Senior Status)</span>
+                            </p>
+                        </div>
+
+                        <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+                            Passionate senior cybersecurity student specializing in network defense, vulnerability assessment, and digital forensics. Focused on building resilient infrastructure and implementing secure system architectures.
+                        </p>
+
+                        <!-- Mailto Link Section -->
+                        <div class="pt-2">
+                            <a href="mailto:mkalamir22@cit.just.edu.jo" 
+                               class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-cyber-500 hover:bg-cyber-400 text-cyber-950 font-semibold text-sm transition duration-200 shadow-[0_0_15px_rgba(0,229,255,0.3)]">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email Me: mkalamir22@cit.just.edu.jo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOFT SKILLS SECTION -->
+            <section class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="p-2 bg-cyber-500/10 rounded-lg border border-cyber-500/20 text-cyber-400">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide">Key Soft Skills</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                    <!-- Teamwork -->
+                    <div class="bg-cyber-900/40 border border-cyber-800/60 hover:border-cyber-500/50 p-5 rounded-xl transition duration-300 hover:-translate-y-1 group">
+                        <div class="text-cyber-400 mb-3 text-2xl group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3 class="font-semibold text-white mb-1">Teamwork</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Collaborating seamlessly in high-pressure Red/Blue team incident response simulations.</p>
+                    </div>
+
+                    <!-- Analytical Thinking -->
+                    <div class="bg-cyber-900/40 border border-cyber-800/60 hover:border-cyber-500/50 p-5 rounded-xl transition duration-300 hover:-translate-y-1 group">
+                        <div class="text-cyber-400 mb-3 text-2xl group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3 class="font-semibold text-white mb-1">Analytical Thinking</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Dissecting complex packet captures, log files, and malware execution traces.</p>
+                    </div>
+
+                    <!-- Problem-Solving -->
+                    <div class="bg-cyber-900/40 border border-cyber-800/60 hover:border-cyber-500/50 p-5 rounded-xl transition duration-300 hover:-translate-y-1 group">
+                        <div class="text-cyber-400 mb-3 text-2xl group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                        </div>
+                        <h3 class="font-semibold text-white mb-1">Problem-Solving</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Designing rapid containment strategies and patching exploits under strict deadlines.</p>
+                    </div>
+
+                    <!-- Communication -->
+                    <div class="bg-cyber-900/40 border border-cyber-800/60 hover:border-cyber-500/50 p-5 rounded-xl transition duration-300 hover:-translate-y-1 group">
+                        <div class="text-cyber-400 mb-3 text-2xl group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3 class="font-semibold text-white mb-1">Communication</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Translating intricate security vulnerabilities into clear technical documentation and reports.</p>
+                    </div>
+
+                    <!-- Adaptability -->
+                    <div class="bg-cyber-900/40 border border-cyber-800/60 hover:border-cyber-500/50 p-5 rounded-xl transition duration-300 hover:-translate-y-1 group">
+                        <div class="text-cyber-400 mb-3 text-2xl group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <h3 class="font-semibold text-white mb-1">Adaptability</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Swiftly learning novel attack vectors, emerging frameworks, and cloud security protocols.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAVORITE PROGRAMMING LANGUAGES & TOOLS TABLE -->
+            <section class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="p-2 bg-cyber-500/10 rounded-lg border border-cyber-500/20 text-cyber-400">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide">Favorite Languages & Cybersecurity Tools</h2>
+                </div>
+
+                <div class="overflow-x-auto rounded-xl border border-cyber-800/60 bg-cyber-900/30 shadow-lg">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-cyber-900/80 border-b border-cyber-800 text-cyber-400 font-mono text-xs uppercase tracking-wider">
+                                <th class="p-4">Name / Technology</th>
+                                <th class="p-4">Category</th>
+                                <th class="p-4">Primary Application</th>
+                                <th class="p-4 text-right">Official Reference Link</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-cyber-800/40 text-sm">
+                            <tr class="hover:bg-cyber-900/50 transition">
+                                <td class="p-4 font-semibold text-white flex items-center space-x-2">
+                                    <i class="fa-brands fa-python text-yellow-400 text-lg"></i>
+                                    <span>Python</span>
+                                </td>
+                                <td class="p-4 text-slate-300">Programming Language</td>
+                                <td class="p-4 text-slate-400">Security scripting, exploit automation, network analysis</td>
+                                <td class="p-4 text-right">
+                                    <a href="https://www.python.org" target="_blank" rel="noopener noreferrer" 
+                                       class="inline-flex items-center space-x-1 px-3 py-1 rounded bg-cyber-500/10 text-cyber-400 hover:bg-cyber-500 hover:text-cyber-950 font-mono text-xs transition">
+                                        <span>python.org</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-cyber-900/50 transition">
+                                <td class="p-4 font-semibold text-white flex items-center space-x-2">
+                                    <i class="fa-solid fa-network-wired text-blue-400 text-lg"></i>
+                                    <span>Wireshark</span>
+                                </td>
+                                <td class="p-4 text-slate-300">Network Security Tool</td>
+                                <td class="p-4 text-slate-400">Deep packet analysis, network protocol inspection & forensic audits</td>
+                                <td class="p-4 text-right">
+                                    <a href="https://www.wireshark.org" target="_blank" rel="noopener noreferrer" 
+                                       class="inline-flex items-center space-x-1 px-3 py-1 rounded bg-cyber-500/10 text-cyber-400 hover:bg-cyber-500 hover:text-cyber-950 font-mono text-xs transition">
+                                        <span>wireshark.org</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-cyber-900/50 transition">
+                                <td class="p-4 font-semibold text-white flex items-center space-x-2">
+                                    <i class="fa-solid fa-bug text-red-400 text-lg"></i>
+                                    <span>Metasploit</span>
+                                </td>
+                                <td class="p-4 text-slate-300">Penetration Testing Framework</td>
+                                <td class="p-4 text-slate-400">Vulnerability scanning, exploitation, and post-exploitation validation</td>
+                                <td class="p-4 text-right">
+                                    <a href="https://www.metasploit.com" target="_blank" rel="noopener noreferrer" 
+                                       class="inline-flex items-center space-x-1 px-3 py-1 rounded bg-cyber-500/10 text-cyber-400 hover:bg-cyber-500 hover:text-cyber-950 font-mono text-xs transition">
+                                        <span>metasploit.com</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-cyber-900/50 transition">
+                                <td class="p-4 font-semibold text-white flex items-center space-x-2">
+                                    <i class="fa-brands fa-linux text-cyan-300 text-lg"></i>
+                                    <span>Linux / Kali Linux</span>
+                                </td>
+                                <td class="p-4 text-slate-300">Security Operating System</td>
+                                <td class="p-4 text-slate-400">Offensive security research, ethical hacking, and forensic analysis</td>
+                                <td class="p-4 text-right">
+                                    <a href="https://www.kali.org" target="_blank" rel="noopener noreferrer" 
+                                       class="inline-flex items-center space-x-1 px-3 py-1 rounded bg-cyber-500/10 text-cyber-400 hover:bg-cyber-500 hover:text-cyber-950 font-mono text-xs transition">
+                                        <span>kali.org</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-cyber-900/50 transition">
+                                <td class="p-4 font-semibold text-white flex items-center space-x-2">
+                                    <i class="fa-solid fa-shield-virus text-emerald-400 text-lg"></i>
+                                    <span>Snort</span>
+                                </td>
+                                <td class="p-4 text-slate-300">IDS / IPS Framework</td>
+                                <td class="p-4 text-slate-400">Real-time network traffic logging and packet inspection against threats</td>
+                                <td class="p-4 text-right">
+                                    <a href="https://www.snort.org" target="_blank" rel="noopener noreferrer" 
+                                       class="inline-flex items-center space-x-1 px-3 py-1 rounded bg-cyber-500/10 text-cyber-400 hover:bg-cyber-500 hover:text-cyber-950 font-mono text-xs transition">
+                                        <span>snort.org</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- ADDITIONAL SECTION: FUTURE GOALS -->
+            <section class="bg-cyber-900/30 border border-cyber-800/60 p-6 sm:p-8 rounded-2xl relative overflow-hidden">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="p-2 bg-shield-500/10 rounded-lg border border-shield-500/20 text-shield-500">
+                        <i class="fa-solid fa-compass text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide">Where Do I See Myself in 4 Years?</h2>
+                </div>
+                
+                <!-- 4 to 6 sentence paragraph describing future goals -->
+                <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                    In four years, I envision myself working as a Senior Cloud Penetration Tester and Threat Hunter within a high-impact cybersecurity consulting firm or critical infrastructure organization. Having established a solid foundation during my fourth-year studies, my immediate focus post-graduation is to earn industry-recognized certifications such as the OSCP (Offensive Security Certified Professional) and CISSP. Furthermore, I aim to actively contribute to open-source threat intelligence tools while designing resilient cloud security architectures that proactively safeguard sensitive enterprise data. Ultimately, I plan to pursue postgraduate studies in Applied Cryptography or Information Security Management to mentor the next generation of defenders and contribute to cutting-edge cybersecurity research.
+                </p>
+            </section>
+
+        </div>
+
+
+        <!-- ================= PAGE 2: CONTACT ME PAGE ================= -->
+        <div id="page-contact" class="hidden space-y-8 transition-opacity duration-300">
+            
+            <div class="max-w-2xl mx-auto text-center space-y-2">
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Get In Touch</h1>
+                <p class="text-slate-400">Have a query, project proposal, or security collaboration opportunity? Send a message below.</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-cyber-900/40 border border-cyber-800/80 p-6 sm:p-10 rounded-2xl shadow-xl backdrop-blur-sm">
+                
+                <!-- Success Message Alert Box (Hidden by default) -->
+                <div id="success-alert" class="hidden mb-6 p-4 rounded-xl bg-shield-500/20 border border-shield-500/50 text-shield-300 text-sm flex items-start space-x-3">
+                    <i class="fa-solid fa-circle-check text-lg text-shield-500 mt-0.5"></i>
+                    <div>
+                        <p class="font-bold">Form Submitted Successfully!</p>
+                        <p class="text-xs text-slate-300 mt-0.5">Thank you for reaching out. I will review your message and reply shortly.</p>
+                    </div>
+                </div>
+
+                <!-- Web Form -->
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" novalidate class="space-y-6">
+                    
+                    <!-- Full Name -->
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-slate-200 mb-1">
+                            Full Name <span class="text-red-400">*</span>
+                        </label>
+                        <div class="relative">
+                            <input type="text" id="fullName" name="fullName" placeholder="e.g., Jane Doe"
+                                   class="w-full px-4 py-3 rounded-xl bg-cyber-950 border border-cyber-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyber-500 focus:ring-1 focus:ring-cyber-500 transition">
+                        </div>
+                        <p id="err-fullName" class="hidden text-xs text-red-400 mt-1 flex items-center space-x-1">
+                            <i class="fa-solid fa-circle-exclamation text-[10px]"></i>
+                            <span>Please enter your full name.</span>
+                        </p>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-slate-200 mb-1">
+                            Email Address <span class="text-red-400">*</span>
+                        </label>
+                        <div class="relative">
+                            <input type="email" id="email" name="email" placeholder="e.g., visitor@example.com"
+                                   class="w-full px-4 py-3 rounded-xl bg-cyber-950 border border-cyber-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyber-500 focus:ring-1 focus:ring-cyber-500 transition">
+                        </div>
+                        <p id="err-email" class="hidden text-xs text-red-400 mt-1 flex items-center space-x-1">
+                            <i class="fa-solid fa-circle-exclamation text-[10px]"></i>
+                            <span>Please enter a valid email address.</span>
+                        </p>
+                    </div>
+
+                    <!-- Country -->
+                    <div>
+                        <label for="country" class="block text-sm font-medium text-slate-200 mb-1">
+                            Country <span class="text-red-400">*</span>
+                        </label>
+                        <div class="relative">
+                            <select id="country" name="country" 
+                                    class="w-full px-4 py-3 rounded-xl bg-cyber-950 border border-cyber-800 text-white focus:outline-none focus:border-cyber-500 focus:ring-1 focus:ring-cyber-500 transition appearance-none">
+                                <option value="" disabled selected>Select your country...</option>
+                                <option value="United States">United States</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Canada">Canada</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+                                <i class="fa-solid fa-chevron-down text-xs"></i>
+                            </div>
+                        </div>
+                        <p id="err-country" class="hidden text-xs text-red-400 mt-1 flex items-center space-x-1">
+                            <i class="fa-solid fa-circle-exclamation text-[10px]"></i>
+                            <span>Please select your country.</span>
+                        </p>
+                    </div>
+
+                    <!-- Comments / Message -->
+                    <div>
+                        <label for="comments" class="block text-sm font-medium text-slate-200 mb-1">
+                            Comments / Message <span class="text-red-400">*</span>
+                        </label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Write your inquiry or message here..."
+                                  class="w-full px-4 py-3 rounded-xl bg-cyber-950 border border-cyber-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyber-500 focus:ring-1 focus:ring-cyber-500 transition"></textarea>
+                        <p id="err-comments" class="hidden text-xs text-red-400 mt-1 flex items-center space-x-1">
+                            <i class="fa-solid fa-circle-exclamation text-[10px]"></i>
+                            <span>Please enter your comments or message.</span>
+                        </p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" 
+                            class="w-full py-3.5 px-6 rounded-xl bg-cyber-500 hover:bg-cyber-400 text-cyber-950 font-bold tracking-wide transition duration-200 shadow-[0_0_20px_rgba(0,229,255,0.25)] flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Submit Message</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-cyber-900/80 bg-cyber-950 py-6 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+            <div>
+                <span>© 2026 Mansoor Alamir • Student ID: <strong class="text-slate-400">160197</strong></span>
+            </div>
+            <div class="flex space-x-4 font-mono text-slate-400">
+                <span>Cybersecurity Major</span>
+                <span>•</span>
+                <span>Fourth Year</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        /**
+         * Navigation Tab Switching Functionality
+         * Allows toggling seamlessly between 'home' and 'contact' views.
+         */
+        function switchTab(tab) {
+            const homePage = document.getElementById('page-home');
+            const contactPage = document.getElementById('page-contact');
+            const navHome = document.getElementById('nav-home');
+            const navContact = document.getElementById('nav-contact');
+
+            const activeClasses = ['text-cyber-400', 'bg-cyber-900/60', 'border-cyber-500/30', 'shadow-[0_0_10px_rgba(0,229,255,0.15)]'];
+            const inactiveClasses = ['text-slate-400', 'hover:text-slate-100', 'hover:bg-cyber-900/40', 'border-transparent'];
+
+            if (tab === 'home') {
+                homePage.classList.remove('hidden');
+                contactPage.classList.add('hidden');
+
+                navHome.classList.add(...activeClasses);
+                navHome.classList.remove(...inactiveClasses);
+
+                navContact.classList.remove(...activeClasses);
+                navContact.classList.add(...inactiveClasses);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (tab === 'contact') {
+                contactPage.classList.remove('hidden');
+                homePage.classList.add('hidden');
+
+                navContact.classList.add(...activeClasses);
+                navContact.classList.remove(...inactiveClasses);
+
+                navHome.classList.remove(...activeClasses);
+                navHome.classList.add(...inactiveClasses);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        /**
+         * Contact Form Submission Validation via JS
+         * Checks that all fields are filled before submission and displays a clear confirmation message.
+         */
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent page refresh
+
+            const fullName = document.getElementById('fullName');
+            const email = document.getElementById('email');
+            const country = document.getElementById('country');
+            const comments = document.getElementById('comments');
+            const successAlert = document.getElementById('success-alert');
+
+            let isValid = true;
+
+            // Reset error states
+            const fields = [
+                { input: fullName, err: 'err-fullName' },
+                { input: email, err: 'err-email' },
+                { input: country, err: 'err-country' },
+                { input: comments, err: 'err-comments' }
+            ];
+
+            fields.forEach(field => {
+                const errElement = document.getElementById(field.err);
+                field.input.classList.remove('border-red-500');
+                errElement.classList.add('hidden');
+            });
+
+            // Validate Full Name
+            if (!fullName.value.trim()) {
+                showError(fullName, 'err-fullName');
+                isValid = false;
+            }
+
+            // Validate Email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+                showError(email, 'err-email');
+                isValid = false;
+            }
+
+            // Validate Country Select
+            if (!country.value) {
+                showError(country, 'err-country');
+                isValid = false;
+            }
+
+            // Validate Comments
+            if (!comments.value.trim()) {
+                showError(comments, 'err-comments');
+                isValid = false;
+            }
+
+            // Execute submission confirmation if valid
+            if (isValid) {
+                // Confirm submission with browser alert as requested
+                alert("Thank you, " + fullName.value.trim() + "! Your form has been submitted successfully.");
+
+                // Show in-page success alert
+                successAlert.classList.remove('hidden');
+                
+                // Clear inputs
+                document.getElementById('contact-form').reset();
+
+                // Auto-scroll to alert
+                successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function showError(element, errId) {
+            element.classList.add('border-red-500');
+            document.getElementById(errId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
